@@ -7,7 +7,7 @@ defineEmits(['adicionar']);
     <section>
         <h2>Adicione uma nova tarefa</h2>
         <input type="text" v-model="model" @keyup.enter="$emit('adicionar')" />
-        <button>Adicionar</button>
+        <button @click="$emit('adicionar')">Adicionar</button>
     </section>
 </template>
 
